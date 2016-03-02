@@ -6,7 +6,7 @@ app.config(['$routeProvider',
     function ($routeProvider) {
         $routeProvider
 
-            .when('/home', {
+            .when('/series', {
                 templateUrl: './app/components/home/homeView.html',
                 controller: 'HomeController'
             })
@@ -17,6 +17,6 @@ app.config(['$routeProvider',
             })
 
             .otherwise({
-                redirectTo: '/home'
+                redirectTo: '/series'
             });
     }]);

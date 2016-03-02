@@ -4,3 +4,30 @@ article.series {
     float: left;
 }
 
+article.series-long {
+    display: flex;
+}
+
+article.series-long > div.media {
+    left: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+
+    -webkit-flex: 1 0 0;
+    flex: 1 0 0;
+}
+
+article.series-long > div.series-info {
+    right: 0;
+    top: 0;
+    padding: 0 0 0 10px;
+    margin: 0;
+
+    -webkit-flex: 2 0 0;
+    flex: 2 0 0;
+
+}
+
+
+
