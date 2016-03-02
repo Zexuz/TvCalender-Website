@@ -1,0 +1,15 @@
+<article class="series">
+    <div class="media">
+        <img src="{{series.imgLink}}">
+    </div>
+
+    <div class="series-info">
+        <div class="title">{{series.title}}</div>
+        <h4>Number of seasons: {{series.seasons.length}}</h4>
+        <div ng-repeat="season in series.seasons">
+            <span>Season: {{season.season}}</span>
+            <span>Number of episodes: {{season.episodes.length}}</span>
+        </div>
+    </div>
+
+</article>
