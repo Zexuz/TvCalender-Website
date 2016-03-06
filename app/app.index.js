@@ -20,3 +20,10 @@ app.config(['$routeProvider',
                 redirectTo: '/series'
             });
     }]);
+
+
+function reSize(){
+
+}
+
+

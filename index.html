@@ -5,13 +5,30 @@
     <title>Title</title>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
+
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/Materialize/dist/js/materialize.js"></script>
+
+    <link href="bower_components/Materialize/dist/css/materialize.css" rel="stylesheet" type="text/css">
+
+
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="./app/app.index.js"></script>
 
 </head>
 <body>
 
-<div data-ng-view></div>
+<nav>
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Logo</a>
+        <ul id="nav-mobile" class="right hide-on-small-only">
+            <li><a class="btn" onclick="reSize()"></a></li>
+        </ul>
+    </div>
+</nav>
+
+<div ng-view></div>
 
 
 <script src="./app/shared/api/restApi.js"></script>

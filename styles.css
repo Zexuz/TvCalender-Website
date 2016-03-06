@@ -2,6 +2,8 @@
 article.series {
     padding: 10px;
     float: left;
+    width: 200px;
+    height: 300px;
 }
 
 article.series-long {
@@ -27,6 +29,11 @@ article.series-long > div.series-info {
     -webkit-flex: 2 0 0;
     flex: 2 0 0;
 
+}
+
+img{
+    max-width:100%;
+    max-height:100%;
 }
 
 

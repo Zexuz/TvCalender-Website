@@ -7,7 +7,7 @@ app.controller('HomeController', ['$scope', 'imdbApi', function ($scope, imdbApi
 
         res.data.forEach(function (item) {
             item.imgLink = item.imgLink.substring(0,item.imgLink.indexOf('_V1')+3);
-            item.imgLink += "_SY300.jpg";
+            item.imgLink += "_SX300.jpg";
         });
 
         console.log(res.data);

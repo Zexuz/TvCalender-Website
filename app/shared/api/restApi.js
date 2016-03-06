@@ -24,7 +24,11 @@ class RestApi {
 
     _sendRequest(options, callback) {
         this.$http(options).then(function successCallback(response) {
-            callback(null, response);
+            if (response.data.success) {
+                callback(null, response.data);
+            } else {
+                callback(response.data, null);
+            }
         }, function errorCallback(response) {
             callback(response, null);
         });

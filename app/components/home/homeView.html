@@ -1,5 +1,6 @@
+
 <main>
-    <div ng-repeat="series in allSeries">
+    <div class="series" ng-repeat="series in allSeries | filter:{title:searchText}">
         <series-short></series-short>
     </div>
 </main>
